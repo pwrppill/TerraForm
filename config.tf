@@ -7,13 +7,6 @@ terraform {
   }
 }
 
-# provider "yandex" {
-#  token                    = "YC_TOKEN"
-#  cloud_id                 = "YC_CLOUD_ID"
-#  folder_id                = "YC_FOLDER_ID"
-#  zone                     = "yc-ru-central1-b"
-#}
-
 resource "yandex_compute_instance" "build" {
   name = "build"
   platform_id = "standard-v3"

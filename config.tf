@@ -43,7 +43,7 @@ resource "yandex_compute_instance" "build" {
 
   metadata = {
     serial-port-enable = 1
-    ssh-keys = "cbrkd:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDW4oAM6dFpQXgKdyJms+C6pyiX7uC4gfL4JdgovJN+m65uMzgQGMbMCuHz4unBPI0utQQy57LxRCSEhU08pJBvClpxpNVGa6rXG2nFIStY2D0g4sKWC7iIAbWmmIgFi/zD8U8f03tfMudiLt3sKaI5kbMmKzBALqeVR7OG+eDReq9DTJkFxPK4F1S3Pz7YUjg3+t/KU7IQJQXxl5RNLYweuaiolejsT4zNbY57jvwnnNzVSfNdflkCcDku5UvtlX8O8UpgQh8Ntqyh4DVT4RyFi67tZQgvcjhxnQMLK7gjygG6Nu57RbhnHcRX5GIV56sKbGFPSOYSy/Be0L4pinAMvGGdW+kENawjpep3xkpmj9uR4rfiH6iMjjyc7C1APOMYov8KYhmyvn6D+wNdne39uOSkjgqCbOU/VgBDAbA+4mYsJ2Wh+zd2USE/K9uL5IhKp1SLBisJogrIP5WoRT6fgRXvqMlS+p9E/K4Qhsb5IeKdd48WaBm7Za8TZHY1Jo8= cbrkd@vm-118"
+    ssh-keys = "cbrkd:${file("/home/cbrkd/.ssh/id_rsa.pub")}"
 #    user-data = "${file("/home/cbrkd/hw12/user-conf.yaml")}"
     user-data = <<EOF
 #!/bin/bash

@@ -6,5 +6,5 @@ users:
     shell: /bin/bash
     sudo: ['ALL=(ALL) NOPASSWD:ALL']
     ssh_authorized_keys:
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDW4oAM6dFpQXgKdyJms+C6pyiX7uC4gfL4JdgovJN+m65uMzgQGMbMCuHz4unBPI0utQQy57LxR>
+      - 
 ---
